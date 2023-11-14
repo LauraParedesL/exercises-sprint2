@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="flex flex-wrap gap-4 place-items-center justify-center">
+    <h1 class="m-1 text-2xl font-bold">EVENTOS</h1>
+    <div id="contenedor" class="flex flex-col gap-5 place-items-center justify-center w-96 h-[300px] bg-orange-200 border-solid border-2 border-black rounded-xl">
+        <div id="cuadrado" class="w-40 h-40 bg-gray-400">
+            
+        </div>
+        <button id="boton" class="h-8 px-1 bg-yellow-400 border-2 border-black font-bold">Cambiar</button>
+    </div>
+    <div id="contenedor2" class="flex flex-col gap-5 place-items-center justify-center w-96 h-[300px] bg-orange-200 border-solid border-2 border-black rounded-xl">
+        <div id="cuadrado2" class="w-40 mt-5 h-40 bg-gray-400">
+            
+        </div>
+        <form class="flex flex-col gap-1 place-items-center" action="">
+            <label for="texto"></label>
+            <input type="text" name="texto" id="texto"  placeholder="Escribe algo">
+            <label class="h-8 w-12 px-1 bg-yellow-400 border-2 border-black font-bold" for="reset">reset</label>
+            <input type="button" name="submit" id="reset">
+        </form>
+        
+    </div>
+    <div id="contenedor3" class="flex flex-col gap-5 place-items-center justify-center w-96 h-[300px] bg-orange-200 border-solid border-2 border-black rounded-xl">
+        <form id="calculadora" class="flex flex-col gap-1 place-items-center" action="">
+            <label for="estatura">Estatura</label>
+            <input type="number" name="estatura" id="estatura">
+            <label for="peso">Peso</label>
+            <input type="number" name="peso" id="peso">
+            
+            <input type="button" >
+                <label id="submit" class="h-8 w-18 px-1 bg-yellow-400 border-2 border-black font-bold" for="enviar">Calcular</label>
+            </input>
+            <label for="resultado">Resultado</label>
+            <input type="number" name="resultado" id="resultado" readonly>
+        </form>
+    </div>
+    <div id="contenedor4" class="flex flex-col gap-5 place-items-center justify-center w-96 h-[300px] bg-orange-200 border-solid border-2 border-black rounded-xl">
+        <form class="flex flex-col place-items-center" action="">
+            <label for="local">Monto en moneda local</label>
+            <input type="number" name="local" id="local">
+            <input type="button" >
+                <label id="Convertir" class="h-8 w-18 mb-2 px-1 bg-yellow-400 border-2 border-black font-bold" for="enviar">Convertir</label>
+            </input>
+            <label for="dolares">Monto en dolares</label>
+            <input type="number" name="dolares" id="dolares">
+        <label class="h-8 w-15 px-1 bg-yellow-400 border-2 border-black font-bold" for="borrar">Borrar</label>
+            <input type="button" name="submit" id="borrar">
+
+        </form>
+    </div>
+    <script src="./main.js" ></script>
+</body>
+</html>
